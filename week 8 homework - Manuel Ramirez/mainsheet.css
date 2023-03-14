@@ -1,0 +1,28 @@
+span {
+  color: white;
+  background-color: red;
+}
+
+p.whiteColor {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+#specificLink1 {
+  color: cyan;
+  font-family: verdana;
+  font-size: 20px;
+}
+
+#specificLink2 {
+  color: purple;
+  font-family: comic sans;
+  font-size: 20px;
+}
+
+#specificLink3 {
+  color: green;
+  font-family: ariel;
+  font-size: 20px;
+}

@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>Contact Me</title>
+<style>
+body {font-family: "Comic Sans MS", "Comic Sans", cursive;}
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="mainsheet.css">
+
+  <script>
+        console.log("Debugging");
+    </script>
+<script>
+function checkboxes()
+{
+ var firstName = document.getElementById("fName").value;
+if(firstName == "")
+{
+document.getElementById("fName").style.backgroundColor = "red";
+document.getElementById("fName").focus();
+window.alert("Gotta remember to enter your first name :O)");
+ }
+var lastName = document.getElementById("lName").value;
+if(lastName == "")
+{
+document.getElementById("lName").style.backgroundColor = "red";
+document.getElementById("lName").focus();
+window.alert("Gotta remember to enter your last name :O)");
+}
+var Email = document.getElementById("EmailA").value;
+if(Email == "")
+{
+document.getElementById("EmailA").style.backgroundColor = "red";
+document.getElementById("EmailA").focus();
+window.alert("Please submit your email ;O(");
+}
+
+}
+</script>
+
+<script>
+function t1()
+{
+var YesBtn = document.getElementById("YesBtn");
+var NoBtn = document.getElementById("NoBtn");
+
+if(YesBtn.checked==true)
+alert("Thank you for accepting the terms ;O)");
+else if(NoBtn.checked==true)
+alert("Why though? ;(");
+else
+alert("please select an option :o)");
+
+}
+</script>
+</head>
+<body style="background-color:lightgreen;">
+<body>
+<center>
+<h1>Contact Me :D</h1>
+
+<form action="nextPage.html" type="POST">
+First Name: <input type="text" id="fName"><br>
+Last Name: <input type="text" id="lName"><br>
+Email Address: <input type="text" id="EmailA"><br>
+<button id="mySubmit" onclick='checkboxes();' type="button">Submit</button>
+</form>
+<img src="keroro.gif" width="300" height="300" alt="froggy">
+
+</br>
+</br>
+<p class="whiteColor">Terms of agreement</p>
+<p class="whiteColor">Do you accept the terms of agreement?</p>
+<input type="radio" name="Terms of agreement selection" id="YesBtn" value="Yes">Yes<br>
+<input type="radio" name="Terms of agreement selection" id="NoBtn" value="No">No
+</br>
+<button onclick="t1()" >Submit</button>
+</br>
+</br>
+<form action="nextPage.html" type="POST">
+</form>
+</br>
+</br>
+<a href="file:///C:/Users/manim/OneDrive/Desktop/week%208%20homework%20-%20Manuel%20Ramirez/Homepage.html">Go to Home page</a>
+</br>
+</br>
+<a href="file:///C:/Users/manim/OneDrive/Desktop/week%208%20homework%20-%20Manuel%20Ramirez/SecondPage.html">Go to second page</a>
+</center>
+</body>
+</html>
